@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!-- lang = language = sprog -->
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="Rejseguiden">
+  <link rel="stylesheet" href="style.css">
+  <meta name="author" content="Rune">
+  <meta name="description" content="Dette er en rejseguide, som giver inspiration og guides til din næste rejse">
+  <meta name="keywords" content="rejseguides, rejseinspiration, seværdigheder, kultur, galleri, praktisk information, coronanyheder, rejsemål">
+  <link rel="icon" type="image/logo.png" href="images/logo.png" />
+
+  <title> Rejseguiden </title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <!-- Logo på forsiden -->
+    <a class="logo" href="index.html">
+      <img class="logo" src="images/logo.png" width="85 px" height="80 px" alt="logo-rejseguiden">
+    </a>
+
+    <!-- navigation starter her -->
+    <nav>
+
+      <!-- Burgermenu her -->
+      <div class="dropdown">
+        <a href="#"><span><img class="burgermenu" src="images/dropdown.png" height="70" width="70" alt="dropdownmenu"></a></span>
+        <div class="dropdown-content">
+          <a href="#">
+            <p class="p-dropdown">Inspiration</p>
+          </a>
+          <a href="#">
+            <p class="p-dropdown">Rejseguide</p>
+          </a>
+          <a href="#">
+            <p class="p-dropdown">Praktisk</p>
+          </a>
+          <a href="#">
+            <p class="p-dropdown">Covid-19</p>
+          </a>
+          <a href="#">
+            <p class="p-dropdown">Om os</p>
+          </a>
+          <a href="#">
+            <p class="p-dropdown">Abonner</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- navigation & unordered liste med menu-punkter -->
+      <ul class="nav_links">
+        <!-- dropdown effekt på menu baren -->
+        <div class="dropdown">
+          <!-- span markere hvor dropdown starter - a href tag til at trykke direkte på inspiration -->
+          <li><a href="#"><span>Inspiration</span></a></li>
+          <div class="dropdown-content">
+            <!-- a href = link til underside i drop down - <p> er de forskellige underside titler -->
+            <a href="#">
+              <p class="p-dropdown">Rejse forslag</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Top 5 liste</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Seværdigheder</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Kultur</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Forlænget weekend</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Galleri</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- dropdown effekt på menu baren -->
+        <div class="dropdown">
+          <!-- span markere hvor dropdown starter - a href tag til at trykke direkte på inspiration -->
+          <li><a href="#"><span>Rejseguide</span></a></li>
+          <div class="dropdown-content">
+            <!-- a href = link til underside i drop down - <p> er de forskellige underside titler -->
+            <a href="#">
+              <p class="p-dropdown">Rejsemål</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Priser & datoer</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Budget venlig</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Anbefaldet restauranter</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- dropdown effekt på menu baren -->
+        <div class="dropdown">
+          <!-- span markere hvor dropdown starter - a href tag til at trykke direkte på inspiration -->
+          <li><a href="#"><span>Praktisk</span></a></li>
+          <div class="dropdown-content">
+            <!-- a href = link til underside i drop down - <p> er de forskellige underside titler -->
+            <a href="#">
+              <p class="p-dropdown">Info om vacciner</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Pas og visum</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- dropdown effekt på menu baren -->
+        <div class="dropdown">
+          <!-- span markere hvor dropdown starter - a href tag til at trykke direkte på inspiration -->
+          <li><a href="#"><span>Covid-19</span></a></li>
+          <div class="dropdown-content">
+            <!-- a href = link til underside i drop down - <p> er de forskellige underside titler -->
+            <a href="#">
+              <p class="p-dropdown">Seneste nyheder</p>
+            </a>
+            <a href="#">
+              <p class="p-dropdown">Restriktioner</p>
+            </a>
+          </div>
+        </div>
+
+        <li><a href="#">Om os</a></li>
+
+    </nav>
+
+    <!-- markering af Knap på nav baren -->
+    <a class="cta" href="#"><button>Abonner</button></a>
+
+  </header>
+
+
+  <!-- Main bruges her til at lave mellemrum i siderne af siden, som styles i css -->
+  <main>
+
+    <section>
+      <img class="strandforside" src="images/strand.png" alt="Strand">
+    </section>
+
+    <section>
+      <img class="orangestreg" src="images/orangestreg.PNG" alt="nytafsnit">
+    </section>
+
+    <section>
+      <h3 class="artikeloverskrift"> De mest populære artikler <h3>
+    </section>
+
+    <!-- Billeder af populære artikler i denne sektion-->
+    <section>
+      <!-- Opsætning så billederne står på række
+Row som container og column som class på hvert enkelte billede -->
+      <div class="row">
+        <div class="column">
+          <!-- Opsætning af hover på billedet -->
+          <div class="container">
+            <div class="content">
+              <!-- link på billedet og target="blank" så den åbner ny side -->
+              <a href="rejseforslag.html">
+                <div class="content-overlay"></div>
+                <!-- selve billedet på hjemmesiden -->
+                <img class="artikel1" src="images/artikel1.jpg" style="width:100%" alt="Koh Tao">
+                <!-- Fortsættelse af hover effekt på billedet -->
+                <div class="content-details fadeIn-bottom">
+                  <!-- Beskrivelse af hvad der skal stå på hover -->
+                  <h3 class="content-title">Læs mere</h3>
+                  <p class="content-text">Klik her</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Opsætning af hover på billedet -->
+          <div class="container">
+            <div class="content">
+              <!-- link på billedet og target="blank" så den åbner ny side -->
+              <a href="covid19.html">
+                <div class="content-overlay"></div>
+                <!-- selve billedet på hjemmesiden -->
+                <img class="artikel2" src="images/artikel2.jpg" style="width:100%" alt="Covid-19">
+                <!-- Fortsættelse af hover effekt på billedet -->
+                <div class="content-details fadeIn-bottom">
+                  <!-- Beskrivelse af hvad der skal stå på hover -->
+                  <h3 class="content-title">Læs mere</h3>
+                  <p class="content-text">Klik her</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <!-- Opsætning af hover på billedet -->
+          <div class="container">
+            <div class="content">
+              <!-- link på billedet og target="blank" så den åbner ny side -->
+              <a href="top5.html">
+                <div class="content-overlay"></div>
+                <!-- selve billedet på hjemmesiden -->
+                <img class="artikel3" src="images/artikel3.jpg" style="width:100%" alt="Thailand">
+                <!-- Fortsættelse af hover effekt på billedet -->
+                <div class="content-details fadeIn-bottom">
+                  <!-- Beskrivelse af hvad der skal stå på hover -->
+                  <h3 class="content-title">Læs mere</h3>
+                  <p class="content-text">Klik her</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Knap til at se alle artikler -->
+    <a href="rejseforslag.html">
+    <div class="knaptilartikler">
+      <section class="sealleartikler">
+        <button class="knap">Se alle artikler</button>
+      </section>
+    </div>
+  </a>
+
+  </main>
+
+  <footer class="footer">
+    <p class="addresse"><strong> Addresse </strong><br> Nørreále 18 <br> 8750 Gennerup </P>
+    <p class="kontakt"><strong> Kontakt </strong><br> Tlf. +45 12345678 <br> E-mail. Opfundet@mail.com</p>
+    <p class="small_device_addresse"> <strong> Rejseguiden </strong> <br> Adr. Nørreále 18 <br>  8750 Gennerup <br>
+      Tlf. +45 12345678</p>
+
+    <div class="icons">
+      <a href="https://da-dk.facebook.com"><img src="images/facebook.png" alt="icon"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="icon"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="icon"></a>
+    </div>
+
+   </footer>
+
+  </footer>
+
+</body>
+
+</html>
